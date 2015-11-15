@@ -290,7 +290,7 @@ span.city:before {
 }
 
 span.city:after {
-	content: 'Paris';
+	content: '[City]';
 }
 
 span.company:before {
