@@ -1,0 +1,314 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Bitter";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Bitter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Bitter";
+    font-style: italic;
+    font-weight: normal;
+    src: url("../fonts/Bitter-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Bitter";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/Bitter-Bold.ttf");
+}
+
+@font-face {
+    font-family: "DejaVuSerif";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/DejaVuSerif.ttf");
+}
+
+@font-face {
+    font-family: "DejaVuSerif";
+    font-style: italic;
+    font-weight: normal;
+    src: url("../fonts/DejaVuSerif-Italic.ttf");
+}
+
+@font-face {
+    font-family: "DejaVuSerif";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/DejaVuSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: "DejaVuSerif";
+    font-style: italic;
+    font-weight: bold;
+    src: url("../fonts/DejaVuSerif-BoldItalic.ttf");
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: white;
+}
+
+@media screen {
+
+	body {
+		background-color: lightgray;
+
+		/* Fix for different kerning on screen and in print */
+		letter-spacing: -0.25px;
+	}
+	
+	.page {
+		background-color: white;
+		margin: 0 auto;
+		width: 21cm;
+	}
+
+	.page > div {
+		padding: 1.5cm 2cm;
+	}
+
+}
+
+@page {
+	margin: 1.5cm 2cm;
+}
+
+/* Typography */
+
+body {
+	font-family: DejaVuSerif;
+	font-size: 12pt;
+
+	word-break: break-word;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+	text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Bitter;
+	font-weight: normal;
+	-moz-hyphens: none;
+	word-wrap: normal;
+	text-align: left;
+
+}
+
+h1 {
+	font-size: 40pt;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0.4cm;
+}
+
+h2 {
+	font-size: 30pt;
+	margin-top: 0.5cm;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 18pt;
+	margin-top: 0.4cm;
+	margin-bottom: 0;
+}
+
+article:first-of-type h3 {
+	margin-top: 0;
+}
+
+h4 {
+	font-size: 12pt;
+	margin-top: 0.1cm;
+	margin-bottom: 0;
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: darkred;
+}
+
+
+/* CV Elements */
+
+.when {
+	float: right;
+	line-height: 20pt;
+	padding: 0.06cm 0 0 0;
+	font-family: Bitter;
+	font-size: 14pt;
+	margin-left: 0.2cm;
+}
+
+.when span {
+	display: block;
+	font-size: 10pt;
+	margin-top: -6pt;
+	text-align: center;
+}
+
+.when span:before {
+	content: "(";
+}
+
+.when span:after {
+	content: ")";
+}
+
+.where {
+	font-family: Bitter;
+}
+
+.who {
+	font-family: Bitter;
+}
+
+.what {
+	margin-top: 0.2cm;
+}
+
+h3 + .what {
+	margin-top: 0;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0.5cm;
+}
+
+li {
+	margin-top: 0.1cm;
+	list-style: circle;
+}
+
+.tags {
+	font-family: Bitter;
+	font-size: 12pt;
+	line-height: 16pt;
+	text-align: left;
+}
+
+div.tags {
+	overflow-x: hidden;
+}
+
+div.tags > div {
+	margin-left: -10pt;
+}
+
+.tags span {
+	white-space: nowrap;
+}
+
+.tags span:before {
+	content: ' ~ ';
+}
+
+.details section {
+	clear: both;
+}
+
+.details section h4 {
+	width: 3.0cm;
+	display: inline-block;
+}
+
+.objective {
+	margin-top: 0.2cm;
+}
+
+/* Avoid breaking pages between header and content */
+.summary,
+.details,
+.skills article,
+.languages,
+.exp article,
+.education article,
+.publications article,
+.projects article,
+.interests,
+.hobbies
+{
+	page-break-inside: avoid;
+}
+
+
+/* Cover letter-specific */
+
+.cover {
+	line-height: 1.4em;
+}
+
+.address {
+	text-align: right;
+}
+
+.address span {
+	display: block;
+}
+
+.address span.name {
+}
+
+.date {
+	text-align: right;
+	margin-top: 0.5cm;
+}
+
+.content {
+}
+
+.cover .content p {
+	page-break-inside: avoid;
+}
+
+.company-specific {
+	display: none;
+}
+
+.date span:after {
+	content: '[Date]';
+}
+
+span.position:after {
+	content: '[Position]';
+}
+
+span.city:before {
+	content: ' in ';
+}
+
+span.city:after {
+	content: 'Paris';
+}
+
+span.company:before {
+	content: ' at ';
+}
+
+span.company:after {
+	content: '[Company]';
+}
+
+span.start-date:after {
+	content: '[Start Date]';
+}
+
+.segment-details, .maligna-details {
+	display: none;
+}
+
+.tech-db, .tech-web, .tech-systems, .tech-search {
+	display: none;
+}
