@@ -14,9 +14,9 @@ However, the version shipped by default is not complete, sometimes it's better t
 
 ## Usage
 
-Usage
+Example usage:
 
-    ./cv.sh example-cv.html css/example.css css/example-company.css
+    ./cv.sh example-cv.html css/medium.css css/example-company.css
 
 This will generate example-cv.pdf file in current directory.
 

@@ -2,6 +2,7 @@
 *
 # Except
 !.gitignore
-!example.css
-!example-company.css
+!cv.css
+!full.css
+!medium.css
 

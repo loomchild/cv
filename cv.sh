@@ -1,5 +1,5 @@
 function usage {
-    echo "usage: cv.sh <file> <style> <custom-style>"
+    echo "usage: cv.sh <file> <style>...
     exit 
 }
 
