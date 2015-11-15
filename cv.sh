@@ -22,12 +22,17 @@ OUT=${DOC%.*}.pdf
 
 ARGS="--print-media-type -B 15mm -T 15mm -L 20mm -R 20mm --use-xserver --disable-smart-shrinking"
 
-STYLE=$2
-if [ -z "$STYLE" ]
+TMP_CSS=/tmp/cv.css
+rm $TMP_CSS
+for STYLE in ${@:2}
+do
+    check_file $STYLE
+    cat $STYLE >> $TMP_CSS
+done
+
+if [ -f $TMP_CSS ]
 then
-    STYLE=css/full.css
+    ARGS="$ARGS --user-style-sheet $TMP_CSS"
 fi
-check_file $STYLE
-ARGS="$ARGS --user-style-sheet $STYLE"
 
 wkhtmltopdf $ARGS $DOC $OUT
