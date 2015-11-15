@@ -1,0 +1,20 @@
+.date span:after {
+	content: '2015-11-15' !important;
+}
+
+span.position:after {
+	content: 'Senior Software Developer' !important;
+}
+
+span.company:after {
+	content: 'AnotherCompany' !important;
+}
+
+span.start-date:after {
+	content: 'January 2016' !important;
+}
+
+.tech-systems {
+	display: none !important;
+}
+
