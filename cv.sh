@@ -20,22 +20,14 @@ fi
 check_file $DOC
 OUT=${DOC%.*}.pdf
 
-STYLE=$2
-if [ -z "$STYLE" ]
-then
-    STYLE=css/full.css
-fi
-check_file $STYLE
+ARGS="--print-media-type -B 15mm -T 15mm -L 20mm -R 20mm --use-xserver --disable-smart-shrinking"
 
-CUSTOM=$3
-if [ ! -z "$CUSTOM" ]
-then
-    check_file $CUSTOM
-    CUSTOM_PARAM=--user-style-sheet $CUSTOM
-fi
+for STYLE in ${@:2}
+do
+    check_file $STYLE
+    ARGS="$ARGS --user-style-sheet $STYLE"
+done
 
+echo $ARGS
 
-disable custom
-check if files exist
-
-wkhtmltopdf --user-style-sheet $STYLE $CUSTOM_PARAM --print-media-type -B 15mm -T 15mm -L 20mm -R 20mm --use-xserver --disable-smart-shrinking $DOC $OUT
+wkhtmltopdf $ARGS $DOC $OUT
