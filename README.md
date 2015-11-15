@@ -14,14 +14,10 @@ However, the version shipped by default is not complete, sometimes it's better t
 
 ## Usage
 
-Simplest usage can look as follows:
+Usage
 
-    ./cv.sh example-cv.htm
+    ./cv.sh example-cv.html css/example.css css/example-company.css
 
 This will generate example-cv.pdf file in current directory.
-
-More complate example, where some sections are omitted and company specific tweaks are applied can look as follows:
-
-    ./cv.sh example-cv.html css/medium.css custom/company.css
 
 
