@@ -24,12 +24,17 @@ However, the version shipped by default is not complete, it's better to install 
 
 ## Usage
 
-Example usage:
+To generate cv run:
 
     ./cv.sh example-cv.html css/medium.css css/example-company.css
 
-This will generate example-cv.pdf file in current directory.
+This will generate example-cv.pdf file in current directory. To generate cover letter run:
+
+    ./cv.sh example-letter.html css/example-company.css
+
+You can specify as many CSS styles as you want.
 
 For serious usage I suggest adding directory called private/ and creating a separate git repository 
-in it. It will be automatically ignored by this project to prevent sharing sensitive files, 
+in it. It can contain HTML content files and styles specific for role types and companies. 
+It will be automatically ignored by this project to prevent sharing sensitive files, 
 but changes can be independently tracked via a private git repository.
