@@ -10,6 +10,10 @@ span.company:after {
 	content: 'Another Company' !important;
 }
 
+span.city:after {
+	content: 'Paris' !important;
+}
+
 span.start-date:after {
 	content: 'January 2016' !important;
 }
