@@ -30,3 +30,6 @@ Example usage:
 
 This will generate example-cv.pdf file in current directory.
 
+For serious usage I suggest adding directory called private/ and creating a separate git repository 
+in it. It will be automatically ignored by this project to prevent sharing sensitive files, 
+but changes can be independently tracked via a private git repository.
