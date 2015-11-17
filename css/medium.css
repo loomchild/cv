@@ -8,31 +8,7 @@
 	width: 2cm !important;
 }
 
-.skills .tools .cvs, 
-.skills .tools .synergy,  
-.skills .tools .liquibase {
-	display: none;
-}
-
-.skills .web .xslt {
-	display: none;
-}
-
-.skills .linux .mailman {
-	display: none;
-}
-
-.exp .dev-env {
-	display: none;
-}
-
 .exp ul li:not(.highlight) {
-	display: none;
-}
-
-.exp .viadeo-mobile,
-.exp .viadeo-platform,
-.exp .viadeo-api {
 	display: none;
 }
 
@@ -44,19 +20,7 @@
 	display: none;
 }
 
-.education .mysql {
-	display: none;
-}
-
-.education .hh {
-	display: none;
-}
-
 .publications .what {
-	display: none;
-}
-
-.hobbies .rock {
 	display: none;
 }
 
