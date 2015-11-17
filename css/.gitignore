@@ -1,8 +1,0 @@
-# Ignore everything in this directory
-*
-# Except
-!.gitignore
-!cv.css
-!full.css
-!medium.css
-!example-company.css

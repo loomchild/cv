@@ -1,5 +1,4 @@
 .*.sw?
 *~
-*.html
 *.pdf
-!example-*.html
+private/
