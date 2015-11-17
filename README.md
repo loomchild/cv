@@ -28,7 +28,9 @@ To generate cv run:
 
     ./cv.sh example-cv.html css/medium.css css/example-company.css
 
-This will generate example-cv.pdf file in current directory. To generate cover letter run:
+This will generate medium-sized example-cv.pdf file in current directory. 
+
+To generate cover letter run:
 
     ./cv.sh example-letter.html css/example-company.css
 
