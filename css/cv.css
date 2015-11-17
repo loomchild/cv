@@ -305,10 +305,3 @@ span.start-date:after {
 	content: '[Start Date]';
 }
 
-.segment-details, .maligna-details {
-	display: none;
-}
-
-.tech-db, .tech-web, .tech-systems, .tech-search {
-	display: none;
-}

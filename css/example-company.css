@@ -7,7 +7,7 @@ span.position:after {
 }
 
 span.company:after {
-	content: 'AnotherCompany' !important;
+	content: 'Another Company' !important;
 }
 
 span.start-date:after {
