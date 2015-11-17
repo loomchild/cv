@@ -243,6 +243,10 @@ div.tags > div {
 	page-break-inside: avoid;
 }
 
+/* Avoid orphans, works with js/orphans.js */
+.staytogether {
+    page-break-inside: avoid;
+}
 
 /* Cover letter-specific */
 
