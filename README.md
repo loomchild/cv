@@ -15,7 +15,7 @@ In other words, I hope you'll create your own unique design for your _CV_.
 
 ## Requirements
 
-wkhtmltopdf. On Debian for example it can be installed as follows:
+[wkhtmltopdf](http://wkhtmltopdf.org/). On Debian for example it can be installed as follows:
 
     apt-get install wkhtmltopdf
 
@@ -24,13 +24,13 @@ However, the version shipped by default is not complete, it's better to install 
 
 ## Usage
 
-To generate _CV_ run:
+To generate a _CV_ PDF run:
 
     ./cv.sh example-cv.html css/medium.css css/example-company.css
 
 This will generate medium-sized example-cv.pdf file in current directory. 
 
-To generate cover letter run:
+To generate cover letter PDF run:
 
     ./cv.sh example-letter.html css/example-company.css
 
