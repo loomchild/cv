@@ -1,7 +1,7 @@
 # CV
 
 A script to generate CV and other documents in PDF format from HTML source. 
-It's based on [wkhtmltopdf](http://wkhtmltopdf.org/) library, which in turn uses WebKit rendering engine.
+It's based on [wkhtmltopdf](http://wkhtmltopdf.org/) tool, which in turn uses WebKit rendering engine.
 
 Cool thing about this utility is that you can work on your CV in a web browser, 
 use CSS templating capabilities like hiding and replacing text, 
