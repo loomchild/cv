@@ -1,6 +1,6 @@
-# CV
+# _CV_
 
-A script to generate CV and other documents in PDF format from HTML source. 
+A script to generate _CV_ and other documents in PDF format from HTML source. 
 It's based on [wkhtmltopdf](http://wkhtmltopdf.org/) tool, which in turn uses WebKit rendering engine.
 
 Cool thing about this utility is that you can work on your CV in a web browser, 
@@ -11,7 +11,7 @@ of familiar HyperText Markup Language, Cascading Style Sheets and JavaScript.
 Example style is included (loosely based on [Wordpress](https://wordpress.org/) 
 [Twenty Thirteen](https://wordpress.org/themes/twentythirteen/) theme), 
 but the concept is more interesting than the actual implementation. 
-In other words, I hope you'll create your own unique design for your CV.
+In other words, I hope you'll create your own unique design for your _CV_.
 
 ## Requirements
 
@@ -24,7 +24,7 @@ However, the version shipped by default is not complete, it's better to install 
 
 ## Usage
 
-To generate cv run:
+To generate _CV_ run:
 
     ./cv.sh example-cv.html css/medium.css css/example-company.css
 
