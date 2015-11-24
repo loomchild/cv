@@ -230,6 +230,10 @@ div.tags > div {
 	margin-top: 0.2cm;
 }
 
+.objective h4 {
+    font-weight: bold;
+}
+
 /* Avoid breaking pages between header and content */
 .summary,
 .details,
