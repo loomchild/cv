@@ -42,4 +42,4 @@ It will be automatically ignored by this project to prevent sharing sensitive fi
 but changes can be independently tracked via a private git repository.
 
 ## Example Output
-[![Example CV Screenshot](doc/example-cv.png?raw=true)](doc/example-cv.pdf)
+[![Example CV Screenshot](doc/example-cv.png?raw=true)](doc/example-cv.pdf?raw=true)
