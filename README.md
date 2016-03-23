@@ -40,3 +40,5 @@ For serious usage I suggest adding directory called private/ and creating a sepa
 in it. It can contain HTML content files and styles specific for role types and companies. 
 It will be automatically ignored by this project to prevent sharing sensitive files, 
 but changes can be independently tracked via a private git repository.
+
+![Example CV Screenshot](example-cv.png?raw=true)
