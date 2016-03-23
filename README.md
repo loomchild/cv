@@ -41,4 +41,5 @@ in it. It can contain HTML content files and styles specific for role types and 
 It will be automatically ignored by this project to prevent sharing sensitive files, 
 but changes can be independently tracked via a private git repository.
 
-![Example CV Screenshot](example-cv.png?raw=true)
+## Example Output
+[![Example CV Screenshot](doc/example-cv.png?raw=true)](doc/example-cv.pdf)
