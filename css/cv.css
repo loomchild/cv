@@ -287,10 +287,6 @@ div.tags > div {
 	display: none;
 }
 
-.date span:after {
-	content: '[Date]';
-}
-
 span.position:after {
 	content: '[Position]';
 }
