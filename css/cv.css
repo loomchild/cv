@@ -311,3 +311,12 @@ span.start-date:after {
 	content: '[Start Date]';
 }
 
+span.ref:before {
+	content: ' - ';
+}
+
+span.ref:after {
+    content: '[Ref. No.]';
+}
+
+
