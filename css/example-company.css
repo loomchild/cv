@@ -1,7 +1,3 @@
-.date span:after {
-	content: '2015-11-15' !important;
-}
-
 span.position:after {
 	content: 'Senior Software Developer' !important;
 }

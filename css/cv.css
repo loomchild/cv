@@ -291,16 +291,8 @@ span.position:after {
 	content: '[Position]';
 }
 
-span.city:before {
-	content: ' in ';
-}
-
 span.city:after {
 	content: '[City]';
-}
-
-span.company:before {
-	content: ' at ';
 }
 
 span.company:after {
